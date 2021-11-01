@@ -11,12 +11,11 @@ var firstname = "Aaron"
 var lastname = "Menocal"
 console.log(firstname)
 alert("My name is" + " " + firstname);
-// document.getElementById("demo").innerHTML="My name is"+""+firstname;
-console.log("My name is" + " " + firstname);
+document.getElementById("demo").innerHTML="My name is"+""+firstname;
 document.write("My name is" + " " + firstname);
 alert("My name is" + " " + firstname);
 console.log(firstname[5]);
-alert("My name is" + "" + firstname + '\n' + "My last name is" + "" + lastname + '\n' +
+alert("My name is" + " " + firstname + '\n' + "My last name is" + "" + lastname + '\n' +
     "My last name is" + "" + lastname);
 var numChil = 13;
 var partnername = "madi";
@@ -44,26 +43,26 @@ console.log(egFamily);
 var egFamily2 = new Array('Julia', 'James', 'Mario');
 console.log(egFamily2);
 var egFamily3
-"Julia"=[0], "James"=[1], "April"=[2];
+//"Julia"=[0], "James"=[1], "April"=[2];
 console.log(egFamily3); 
 console.log("ALL Strings are CrEaTeD equal" != "All STRINGS are CrEaTED Equal");
 var boolean = "ALL Strings are CrEaTeD equal" == "ALL Strings are CrEaTeD equal"
 console.log(boolean);
-console.log(answer);
-F = Cx + 1.8 + 32
-var celsius = 12;
-var farenheit = celsius * 1.8 + 32;
-console.log(farenheit);
-let c = 12;
-let F = c * 1.8 + 32;
-console.log(F);
+//console.log(answer);
+//F = Cx + 1.8 + 32
+//var celsius = 12;
+//var farenheit = celsius * 1.8 + 32;
+//console.log(farenheit);
+//let c = 12;
+//let F = c * 1.8 + 32;
+//console.log(F);
 var haiku= "Blowing from the west" + "\nFallen leaves gather" + "\nIn the east"; 
  var place= document.getElementById("testing");
-place.innerHTML= haiku.toUpperCase(); 
+//place.innerHTML= haiku.toUpperCase(); 
 console.log (haiku); 
 var haiku = "Blowing from the west\n" + "Fallen leaves gather\n" + "In the east.";
 console.log(haiku);
- const haiku = 'Blowing from the west\n'+ 'Fallen leaves gather\n' + 'In the east';
+ //const haiku = 'Blowing from the west\n'+ 'Fallen leaves gather\n' + 'In the east';
  console.log(haiku);
 var thingOne= "red";
 var thingTwo= "blue";
@@ -76,7 +75,6 @@ console.log(fullName.big());
 var big= "I am as big as an Elephant";
 var small= "I am as small as a mouse";
 function calculateSupply(age, amountPerDay) {
-    //block of code here
     var maxAge= 100;
     var totalNeeded= (amountPerDay * 365) * (maxAge - age); 
     var message = 'You will need ' + totalNeeded + ' cups of coffee to last you until the ripe old age of ' + maxAge;
@@ -86,3 +84,10 @@ calculateSupply(30, 3);
 calculateSupply(21, 4); 
 calculateSupply(25, 1); 
 calculateSupply(32, 3);
+
+var newYear = new Date("January 1,2022");
+var nextYear = currentDay.getFullYear() + 1;
+newYear.setFullYear(nextYear);
+var daysLeft = newYear - currentDay;
+var daysLeft = (newYear - currentDay)/(1000*60*60*24);
+document.getElementById("days").textContent = daysLeft;
